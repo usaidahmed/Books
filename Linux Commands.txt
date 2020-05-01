@@ -1,0 +1,135 @@
+Linux Commands
+
+1. cd /
+Takes to the root directory.
+
+2. ls
+Shows the content of the data inside the directory (root directory).
+
+3. cd (directory name)
+Change directory.
+
+4. (Inside directory) ls
+Shows the content inside the directory.
+
+5.(~) Represents Home of a directory.
+
+6. cd ..
+Reverts back to the main directory of the sub directory.
+
+7. mkdir (directory name)
+Is used to create a main directory.
+
+8. touch (filename)
+(Creates a file) in a directory.
+
+9. vi (file name)
+Is used to edit a file.
+
+10. i
+Is used to insert data like text in a txt file.
+
+11.ESC Key
+Is used to escape from insert mode.
+
+12. Shift + :
+Is used to save data in txt file.
+
+13. When : appears type "w" for write and "q" for exit
+
+14. cat (filename)
+this command prints the content inside a text file.
+
+15. cp (filename) /specified directory in hierarchical order/
+Copies a file from a directory and paste it in another directory.
+
+16. mv (filename) /specified directory in hierarchical order/
+Moves a file from one directory to another directory.
+
+17. rm (filename)
+Removes or deletes a file from a directory.
+
+18. man (command)
+Displays details of commands.
+
+19. find /specified directory in hierarchical order/ "filename"
+Is used to find a file in a directory or a directory.
+
+20. find /specified directory in hierarchical order/ "filename*"
+
+21. find /specified directory in hierarchical order/ -name "filename"
+
+-name is a flag and is used to define that add a filename next to it.
+
+22. uname
+Returns the name of your operating system.
+
+23. uname -a
+Provides details of your computer such as processer architecture and operating system.
+
+24. lscu
+Returns information about system such as processor speed, model name, cache and other informations.
+
+25. df -h
+h is a flag and is used to provide human readable output.
+df provides information about disk space which are mounted.
+
+26. du /specified directory in hierarchical order/
+du is used to identify number of files in the directory and the space aquired by the files.
+
+27. du -s /specified directory in hierarchical order/
+du s returns the total size of the directory.
+
+28. date
+Returns date and time.
+
+29. cal
+returns calender.
+
+30. w
+Is used to define which user is online/log in.
+
+31. apt-get install package -name
+Is used to install a required package/dependency.
+
+32. apt-cache search keyword
+Defines the name of the package which will be downloaded.
+
+33. info
+Returns online information of info command.
+
+34. type (command)
+Defines the loaction of the command file.
+
+35. bg
+Defines background servies.
+
+36. free
+Defines how much memory is available.
+
+37. ps
+ Shows the running process/services to the user.
+
+38. kill (process id)
+Kills the process. 
+
+39. nice
+Runs a program on low priority.
+
+40. top
+Defines which process is utilizing certain amount CPU and RAM.
+
+41. su -
+su means switch to root in the shell.
+
+41. shutdown
+powers off the computer.
+
+
+
+
+
+
+
+
+
