@@ -53,9 +53,10 @@ Removes or deletes a file from a directory.
 Displays details of commands.
 
 19. find /specified directory in hierarchical order/ "filename"
-Is used to find a file in a directory or a directory.
+Is used to find a file in a directory or a directory. if file found it returns a path of the file.
 
 20. find /specified directory in hierarchical order/ "filename*"
+* represents that if a user wants to find files with same names without thier extensions or if a user wants to find files or file by using the files first name. 
 
 21. find /specified directory in hierarchical order/ -name "filename"
 
@@ -67,18 +68,18 @@ Returns the name of your operating system.
 23. uname -a
 Provides details of your computer such as processer architecture and operating system.
 
-24. lscu
+24. lscpu
 Returns information about system such as processor speed, model name, cache and other informations.
 
 25. df -h
 h is a flag and is used to provide human readable output.
-df provides information about disk space which are mounted.
+df provides information about used and available disk space which are mounted.
 
 26. du /specified directory in hierarchical order/
-du is used to identify number of files in the directory and the space aquired by the files.
+du is used to identify the space aquired by the files in a directory.
 
 27. du -s /specified directory in hierarchical order/
-du s returns the total size of the directory.
+du -s returns the total size of the directory.
 
 28. date
 Returns date and time.
@@ -120,12 +121,99 @@ Runs a program on low priority.
 Defines which process is utilizing certain amount CPU and RAM.
 
 41. su -
-su means switch to root in the shell.
+su means switch to root user in the shell.
 
 41. shutdown
 powers off the computer.
 
+42. sudo su
+logs into root user (commonly used when access is denied while installng a package or dependency)
 
+42. sudo 
+Gains root priviliges for normal user.
+
+43. Use TAB key to auto complete words with three or four letters written.
+
+44. double tap TAB to check for possibilities
+Example : apt (Double TAB) gives us possibilities that could be used with apt.
+
+45. CTRL + a
+This command brings the cursor at the beginning of a written command.
+
+46. CTRL + e
+This command brings the cursor to the end of the written command.
+
+47. ls -l
+Checkes for permissions of files i.e rw-rw-r
+
+rw-rw-r are three classes... 1st class (rw) belongs to the user who has created this file.
+2nd class (wr) belongs to the group if a file is allowed to the group of users.
+3rd class belongs to other users those users are only allowed to read the file.
+none of the classes are allowed to execute the file.
+
+48. chmod (numeric values) (filename)
+Edits the permissions of the file.
+
+49. uptime
+This command shows the time since the system started. also shows current time, active user, load average.
+
+50. uname -srv
+This command shows the name, release time and date, version.
+
+51. cd ~
+This commands leads us to the home(root) of the directory.
+
+52. pwd
+Prints the path of the working directory.
+
+53. hostname
+prints the hostname of the user.
+
+54. hostname -i
+prints the ip address.
+
+55. cp (filename) (path in which the file will be copied)
+Copies a file from one directory to another.
+
+56. rm (filename)
+Removes a file from the directory if exists.
+
+57. mv (filename) (path in which the file will be moved)
+Moves a file from one directory to another.
+
+58. su
+stands for substitue user is sed by a computer user to execute commands with the priviligies of another user account.
+when executed it invokes a shell without changing the current working directory or the user environment.
+
+59. sudo useradd john -m
+-m is a flag and is used for creating a user.
+
+60. sudo passwd john
+changes password of the user.
+
+61. sudo userdel john -r
+-r is a flag and is used to remove or delete a user.
+
+62. alias
+alis is used to create a custom command
+Example : alias myfile="touch myfile.txt"
+here a custom command is created as (myfile) and this custom command can also be used to create myfile.txt in other directories by using custom command myfile.
+
+63. unalias myfile
+is used to remove the custom command.
+
+64. sudo apt remove package name
+Removes the installed package.
+
+65. suo apt-cache search package name
+Is used to find packages related to the package name.
+commonly used when user usere does not have much information about the package.
+
+66. cat /proc/cpuinfo
+provides detailed information related to the cpu.
+
+67. 
+ 
 
 
 
